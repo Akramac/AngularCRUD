@@ -1,0 +1,41 @@
+<div class="row">
+
+  <div class="col-md-6 col-md-offset-2">
+    <h1>Login </h1>
+    <!--<form  (ngSubmit)="onsubmit()">
+
+        <label for="email">Email address:</label>
+        <input type="email" [formControl]="email" id="email">
+        <div *ngIf="submitted " class="error ">
+          <div *ngIf="loginForm.controls.email.errors.required">Email is required </div>
+       </div>
+
+       <label for="pwd">Password:</label>
+       <input type="password" [formControl]="password" id="pwd">
+       <div *ngIf="submitted " class="error">
+         <div *ngIf="loginForm.controls.password.errors.required">Password is required</div>
+       </div>
+
+
+
+      <button class="btn btn-default">Login</button>
+      <div *ngIf="invalidLogin" class="error">
+        <div>Invalid </div>
+      </div>
+  </form>-->
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" formControlName="email" placeholder="Email" name="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+          <label for="password">password:</label>
+          <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+        </div>
+
+        <button type=" submit" class="btn btn-success">Submit</button>
+      </form>
+
+</div>
+</div>

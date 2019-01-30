@@ -1,5 +1,5 @@
 import { AppPage } from './app.po';
-
+import { ReactiveFormsModule } from '@angular/forms';
 describe('workspace-project App', () => {
   let page: AppPage;
 
